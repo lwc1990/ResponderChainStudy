@@ -15,6 +15,7 @@
 		23299C891F4FC80400C9277A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23299C871F4FC80400C9277A /* LaunchScreen.storyboard */; };
 		23299C941F4FC80400C9277A /* DemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 23299C931F4FC80400C9277A /* DemoTests.m */; };
 		23299C9F1F4FC80400C9277A /* DemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 23299C9E1F4FC80400C9277A /* DemoUITests.m */; };
+		237BA3751F555AB100C609C7 /* DefineBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 237BA3741F555AB100C609C7 /* DefineBtn.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		23299C9A1F4FC80400C9277A /* DemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		23299C9E1F4FC80400C9277A /* DemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoUITests.m; sourceTree = "<group>"; };
 		23299CA01F4FC80400C9277A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		237BA3731F555AB100C609C7 /* DefineBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DefineBtn.h; sourceTree = "<group>"; };
+		237BA3741F555AB100C609C7 /* DefineBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DefineBtn.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +113,8 @@
 				23299C871F4FC80400C9277A /* LaunchScreen.storyboard */,
 				23299C8A1F4FC80400C9277A /* Info.plist */,
 				23299C791F4FC80400C9277A /* Supporting Files */,
+				237BA3731F555AB100C609C7 /* DefineBtn.h */,
+				237BA3741F555AB100C609C7 /* DefineBtn.m */,
 			);
 			path = Demo;
 			sourceTree = "<group>";
@@ -274,6 +279,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				23299C811F4FC80400C9277A /* ViewController.m in Sources */,
+				237BA3751F555AB100C609C7 /* DefineBtn.m in Sources */,
 				23299C7E1F4FC80400C9277A /* AppDelegate.m in Sources */,
 				23299C7B1F4FC80400C9277A /* main.m in Sources */,
 			);
@@ -425,6 +431,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Demo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = person.Demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -436,6 +443,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Demo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = person.Demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -507,6 +515,7 @@
 				23299CA51F4FC80400C9277A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		23299CA61F4FC80400C9277A /* Build configuration list for PBXNativeTarget "DemoTests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +524,7 @@
 				23299CA81F4FC80400C9277A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		23299CA91F4FC80400C9277A /* Build configuration list for PBXNativeTarget "DemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +533,7 @@
 				23299CAB1F4FC80400C9277A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

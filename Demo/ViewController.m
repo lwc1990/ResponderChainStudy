@@ -16,7 +16,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
     [self.view setBackgroundColor:[UIColor groupTableViewBackgroundColor]];
     [self testHitTestV];
 }
@@ -30,7 +29,6 @@
     [button1 setBackgroundColor:[UIColor brownColor]];
     [self.view addSubview:button1];
     
-//    UIButton *button2 = [UIButton buttonWithType:UIButtonTypeCustom];
     DefineBtn *button2 =  [[DefineBtn alloc]init];
     [button2 setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
     [button2 setTitle:@"button2" forState:UIControlStateNormal];
@@ -39,7 +37,6 @@
     [button2 setBackgroundColor:[UIColor brownColor]];
     [self.view addSubview:button2];
     
-//    UIButton *button3 = [UIButton buttonWithType:UIButtonTypeCustom];
     DefineBtn *button3 =  [[DefineBtn alloc]init];
     [button3 setTitle:@"button3" forState:UIControlStateNormal];
     [button3 setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
@@ -47,6 +44,7 @@
     [button3 setBackgroundColor:[UIColor grayColor]];
     [button3 setFrame:CGRectMake(50,150,[UIScreen mainScreen].bounds.size.width - 100,300)];
     [self.view addSubview:button3];
+    
 }
 
 -(void)btn1Click:(id)sender
@@ -61,6 +59,13 @@
 {
     NSLog(@"button3");
 }
+/*
+ 1.button1,button2,button3三个button是同级的，把它们加入到父视图中的顺序为button1,button2,button3,且button3与button1，button2的frame是有重叠的。
+ 2.在点击button3时，只做了button3的命中测试，且命中；点击button1时，命中测试的顺序为button3,button2,button1,命中button1;点击button2时，命中测试的顺序为button3,button2,命中button2.
+ 结论：1.一旦命中一个，就不再进行递归的命中测试了。
+      2.同级命中测试的顺序，是与加入到父视图中的顺序有关的，越先加入，进行命中测试越靠后，认为系统在取进行命中测试的视图时，是从view的subviews数组取的。
+ 
+ */
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

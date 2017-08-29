@@ -109,12 +109,12 @@
 				23299C7F1F4FC80400C9277A /* ViewController.h */,
 				23299C801F4FC80400C9277A /* ViewController.m */,
 				23299C821F4FC80400C9277A /* Main.storyboard */,
+				237BA3731F555AB100C609C7 /* DefineBtn.h */,
+				237BA3741F555AB100C609C7 /* DefineBtn.m */,
 				23299C851F4FC80400C9277A /* Assets.xcassets */,
 				23299C871F4FC80400C9277A /* LaunchScreen.storyboard */,
 				23299C8A1F4FC80400C9277A /* Info.plist */,
 				23299C791F4FC80400C9277A /* Supporting Files */,
-				237BA3731F555AB100C609C7 /* DefineBtn.h */,
-				237BA3741F555AB100C609C7 /* DefineBtn.m */,
 			);
 			path = Demo;
 			sourceTree = "<group>";
